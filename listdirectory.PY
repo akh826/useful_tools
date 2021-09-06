@@ -1,7 +1,4 @@
-from os import listdir
-from os.path import isfile, join
 import os
-from os import walk
 
 currpath = 'data'
 count = 0
@@ -23,5 +20,8 @@ def listfile(path,count):
     else:
         return None
 
-listfile(currpath,count)
-# print(os.path.isdir('C:\\Users\\User\\Desktop\\mapimage\\data\\Cap_image_cam1\\0cam1_.png'))
+def main():
+    listfile(currpath,count)
+
+if __name__ == '__main__':
+    main()
